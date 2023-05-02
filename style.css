@@ -1,0 +1,39 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+div {
+    border: 2px red solid;
+}
+
+.wrapper, 
+.sidebar,
+.navbar,
+.content-grid,
+.logo-grid,
+.nav-grid
+.options-grid {
+    display: grid;
+}
+
+.wrapper{
+    grid-template-columns: minmax(min-content, 350px) 4fr;
+    grid-template-rows: minmax(min-content, 200px) 6fr;
+    height: 100%;
+}
+
+.sidebar{
+    grid-row: 1/-1;
+    grid-template-rows: 100px 3fr 5fr;
+    gap: 30px;
+}
+
+.logo-grid {
+    grid-template-columns: 1fr 2fr;
+}
+
+
+
