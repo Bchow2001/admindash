@@ -37,7 +37,7 @@ input{
 
 .wrapper{
     grid-template-columns: 300px 4fr;
-    grid-template-rows: minmax(min-content, 200px) 6fr;
+    grid-template-rows: 200px 1fr;
     height: 100%;
 }
 
@@ -108,13 +108,25 @@ input{
 
 .searchbar{
     display: grid;
-    grid-template-columns: auto minmax(200px,1fr) repeat(3, auto);
+    grid-template-columns: auto minmax(300px,1fr) repeat(3, auto);
     align-items: center;
+    gap: 10px;
+}
+
+.icon{
+    height: 35%;
 }
 
 #notification-icon{
-    margin-left: 150px;
+    margin-left: min(150px, 10vw);
 }
+
+#small-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+
 
 
 
